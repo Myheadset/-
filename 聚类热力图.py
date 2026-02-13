@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # =========================
 np.random.seed(42)
 n_rows = 250
-samples = ["siNC_1", "siNC_2", "siUxt_1", "siUxt_2"]
+samples = ["eg_1", "eg_2", "eg_1", "eg_2"]
 
 base = np.random.normal(0, 1, size=(n_rows, 1))
 noise = np.random.normal(0, 0.6, size=(n_rows, 4))
@@ -69,3 +69,4 @@ cb.set_label("Z-score", rotation=90)
 plt.savefig("cluster_heatmap_method4_optimized.png", dpi=200,
             bbox_inches="tight", pad_inches=0.2)
 plt.show()
+
